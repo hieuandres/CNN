@@ -36,6 +36,7 @@ Bằng cách ký hiệu I là độ dài kích thước đầu vào, F là độ
 ### c) Trường thụ cảm
 Trường thụ cảm tại tầng k là vùng được ký hiệu Rk ×Rk của đầu vào mà những pixel của activation map thứ k có thể "nhìn thấy". Bằng cách gọi Fj là kích thước bộ lọc của tầng j và Si là giá trị độ trượt của tầng i và để thuận tiện, ta mặc định S0 = 1, trường thụ cảm của tầng k được tính toán bằng công thức:
 > ![image](https://user-images.githubusercontent.com/105013825/176097956-644e0f74-6682-4431-b626-80ced8aa718b.png)
+
 ##5. Các hàm kích hoạt thường gặp.
 ### a) Rectified Linear Unit
 Rectified Linear Unit: Tầng rectified linear unit (ReLU) là một hàm kích hoạt g được sử dụng trên tất cả các thành phần. Mục đích của nó là tăng tính phi tuyến tính cho mạng. Với đầu ra là: ƒ (x) = max (0, x).
