@@ -24,7 +24,7 @@ Một bộ lọc kích thước F×F áp dụng lên đầu vào chứa C kênh 
 Zero-padding là tên gọi của quá trình thêm P số không vào các biên của đầu vào. Giá trị này có thể được lựa chọn thủ công hoặc một cách tự động bằng một trong ba những phương pháp mô tả bên dưới:
 > ![padding](https://user-images.githubusercontent.com/105013825/176098157-3ea6c586-e03a-4ac6-90b2-e7637258ccb1.png)
 
-##4. Điều chỉnh siêu tham số.
+## 4. Điều chỉnh siêu tham số.
 ### a) Tính tương thích của tham số trong tầng tích chập
 Bằng cách ký hiệu I là độ dài kích thước đầu vào, F là độ dài của bộ lọc, P là số lượng zero padding, S là độ trượt, ta có thể tính được độ dài O của feature map theo một chiều bằng công thức:
 > ![Thamso](https://user-images.githubusercontent.com/105013825/176098180-3c62b467-a476-47b0-9b9f-0163fb736464.png)
@@ -37,7 +37,7 @@ Bằng cách ký hiệu I là độ dài kích thước đầu vào, F là độ
 Trường thụ cảm tại tầng k là vùng được ký hiệu Rk ×Rk của đầu vào mà những pixel của activation map thứ k có thể "nhìn thấy". Bằng cách gọi Fj là kích thước bộ lọc của tầng j và Si là giá trị độ trượt của tầng i và để thuận tiện, ta mặc định S0 = 1, trường thụ cảm của tầng k được tính toán bằng công thức:
 > ![image](https://user-images.githubusercontent.com/105013825/176097956-644e0f74-6682-4431-b626-80ced8aa718b.png)
 
-##5. Các hàm kích hoạt thường gặp.
+## 5. Các hàm kích hoạt thường gặp.
 ### a) Rectified Linear Unit
 Rectified Linear Unit: Tầng rectified linear unit (ReLU) là một hàm kích hoạt g được sử dụng trên tất cả các thành phần. Mục đích của nó là tăng tính phi tuyến tính cho mạng. Với đầu ra là: ƒ (x) = max (0, x).
 > ![image](https://user-images.githubusercontent.com/105013825/176098028-de954098-4c48-48c5-a3ed-4d41e1e6d37e.png)
